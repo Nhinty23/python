@@ -1,4 +1,4 @@
-# Cơ bản về hàm
+# Cơ bản về hàm (function)
 
 # 1. Hàm
 # - Tập hợp các dòng code thực hiện một công việc cụ thể
