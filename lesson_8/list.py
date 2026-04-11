@@ -63,4 +63,60 @@ print(fruits[1::2], "\n") # [1, 5, 2]
 
 print(fruits[2:4], "\n") # Lấy từ vị trí 2 đến vị trí 3
 
+# 4. Các hàm phổ biến trong list
+# Chèn môt phần tử vào cuối chuỗi
+students = ["Nhi", "Huệ", "Mai"]
+students.append("Trang")
+print(students, "\n")
+
+# Chèn một phần tử x vào vị trí i
+students.insert(2, "Dương")
+print(students, "\n")
+
+# Nối list
+new_students = ["Huế", "Ánh"]
+students.extend(new_students)
+print(students, "\n")
+
+# Xóa phần tử x
+students.remove("Ánh")
+print(students, "\n")
+
+# Xóa và in ra giá trị bị xóa
+removed_student = students.pop(4)
+print(students, "\n")
+print(removed_student, "\n")
+
+# Xóa toàn bộ list
+check_clear_all = [1, 2, 3, 4, 5]
+check_clear_all.clear()
+print(check_clear_all, "\n")
+
+# Sắp xếp (sort)
+print(students, "\n")
+students.sort()
+print(students, "\n")
+
+students.sort(reverse=True)
+print(students, "\n")
+
+# Đảo ngược list
+list_reverse = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+list_reverse.reverse()
+print(list_reverse, "\n")
+
+# Đếm số lần xuất hiện của một phần tử
+students.append("Nhi")
+cout_nhi = students.count("Nhi")
+print(f"Nhi xuất hiện {cout_nhi} lần trong danh sách", "\n")
+
+# 5. Duyệt list
+# Duyệt list bằng for
+for student in students:
+    print(student, "\n")
+
+# Duyệt bằng index (chỉ số)
+for index in range(len(students)):
+    print(students[index], "\n")
+
 # Nguyễn Thị Yến Nhi - 2026
