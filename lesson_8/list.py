@@ -2,6 +2,7 @@
 # List là một danh sách chứa các phần tử có thể trùng lặp
 # List gom một nhóm các dữ liệu vào với nhau để quản lý cho gọn
 
+##################################################################################
 # 2. Cách nhận biết một list là cặp ngoặc vuông [] ngăn cách nhau bởi dấu phẩy (,)
 fruits = ["apple", "banana", "cherry"]
 mix = ["apple", "banana", "cherry", 1, 5, True, "Yến Nhi"]
@@ -9,6 +10,7 @@ mix = ["apple", "banana", "cherry", 1, 5, True, "Yến Nhi"]
 # Vị trí các phần tử trong list bắt đầu từ 0, 1, 2,...,n
 # Vị trí các phần tử có thể thay đổi được
 
+##################################################################################
 # 3. Các thao tác cơ bản
 #  Lấy trái cây ở ngăn đầu
 print(fruits[0], "\n")
