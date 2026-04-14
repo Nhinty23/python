@@ -47,4 +47,35 @@ print(students, "\n")
 students["name"] = "Nguyễn Thị Yến Nhi"
 print(students, "\n")
 
+# 3. Cách tạo dictionary
+def my_dictionary():
+    # Tạo dictionary bằng cặp ngoặc nhọn {}
+    print("My dictionary------------------------------------------", "\n")
+    student = {"name": "Nguyễn Thị Yến Nhi", "age": 21, "grade": 9}
+    print(student, "\n")
+    print(type(student), "\n")
+
+    # Tạo dictionary bằng hàm dict()
+    # key phải là các biến hợp lệ (bắt đầu chữ cái hoặc gạch dưới,
+    # không được bắt đầu bằng số, không phải là keyword - class, for,...
+    # không chứa khoảng trắng ...
+    print("My scores----------------------------------------------", "\n")
+    scores = dict(math=10, enlish=9, history=8)
+    print(scores, "\n")
+    print(type(scores), "\n")
+
+    # Dictionary có thể lồng nhau
+    my_students = {
+        "nhi": {"name": "Nhi", "age": 21, "grade": 9},
+        "huệ": {"name": "Huệ", "age": 13, "grade": 9.5},
+        "dương": {"name": "Dương", "age": 21, "grade": 8}
+    }
+    print(my_students, "\n")
+    print(type(my_students), "\n")
+
+    # In ra mỗi Nhi thôi
+    print(my_students["nhi"], "\n")
+
+my_dictionary()
+
 # Nguyễn Thị Yến Nhi - 2026
