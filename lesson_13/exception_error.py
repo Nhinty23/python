@@ -57,7 +57,34 @@ def divide1():
 # Nhập năm sinh để tính tuổi
 # Có thể viết là datetime.today().year nếu sửa thành from datetime import datetime thay vì là import datetime như hiện tại
 
+# Dùng raise
+def validate_year(year, current_year):
+    if year <= 0:
+        raise ValueError("Năm sinh phải > 0")
+    if year > current_year:
+        raise ValueError("Năm sinh không hợp lệ (ở tương lai)")
+
 def calculate_age():
+    while True:
+        try:
+            year_of_birth = int(input("Nhập năm sinh của bạn: "))
+            current_year = datetime.datetime.today().year
+
+            validate_year(year_of_birth, current_year)
+
+            age = current_year - year_of_birth
+
+        except ValueError as e:
+            print(e, "\n")
+            continue
+        else:
+            print(f"Tuổi của bạn là {age} tuổi")
+            break
+
+# calculate_age()
+
+# Không dùng raise
+def calculate_age_no():
     while True:
         try:
             year_of_birth = int(input("Enter year of birth: "))
@@ -80,10 +107,40 @@ def calculate_age():
             print(f"Tuổi của bạn là {age} tuổi")
             break
 
-# calculate_age()
+# calculate_age_no()
 
 # Tính chu vi , diện tích hình chữ nhật
+# Dùng raise
 def calculate_rectangle():
+    while True:
+        try:
+            length = float(input("Nhập chiều dài: "))
+            width = float(input("Nhập chiều rộng: "))
+
+            # Validate bằng raise
+            if length <= 0 or width <= 0:
+                raise ValueError("Kích thước phải lớn hơn 0")
+
+            if width >= length:
+                raise ValueError("Chiều rộng phải nhỏ hơn chiều dài")
+
+            perimeter = (length + width) * 2
+            area = length * width
+
+        except ValueError as e:
+            print(e)
+            continue
+        else:
+            print(f"Chu vi: {perimeter:.2f}")
+            print(f"Diện tích: {area:.2f}")
+            break
+        finally:
+            print("Hoàn thành\n")
+
+calculate_rectangle()
+
+# Không dùng raise
+def calculate_rectangle_no():
     while True:
         try:
             length = float(input("Nhập chiều dài: "))
@@ -110,6 +167,6 @@ def calculate_rectangle():
         finally:
             print("Hoàn thành\n")
 
-calculate_rectangle()
+# calculate_rectangle_no()
 
 # Nguyễn Thị Yến Nhi - 2026
