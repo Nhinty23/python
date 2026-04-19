@@ -19,3 +19,5 @@ Bài tập liên quan đến toán tử số học
 18. Hình vuông thứ nhất có chu vi bằng 24. Hình vuông thứ hai có chu vi bằng 40. Viết chương trình tính xem độ dài một cạnh của hình vuông thứ hai dài hơn độ dài một cạnh của hình vuông thứ nhất bao nhiêu đơn vị?
 19. Nếu có 100 viên kẹo chia đều cho 9 bạn, mỗi bạn được bao nhiêu viên (lấy phần nguyên) và còn dư bao nhiêu viên?
 20. Viết chương trình đổi 2 ngày 5 giờ 30 phút sang đơn vị phút
+
+# Nguyễn Thị Yến Nhi - 2026
