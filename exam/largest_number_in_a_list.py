@@ -21,3 +21,5 @@ print(f"Danh sách bao gồm các số sau: \n {numbers_list}", "\n")
 largest_number = find_largest(numbers_list)
 if largest_number is not None:
     print(f"Số lớn nhất trong danh sách là {largest_number}")
+
+# Nguyễn Thị Yến Nhi - 2026
